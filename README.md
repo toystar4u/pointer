@@ -2,6 +2,12 @@
 POINTer S/W Release
 
 ## Latest Version
+
+### PPPRTK
+- [WIN64](https://github.com/toystar4u/pointer/blob/main/latest/win64/ppprtk_run.exe) : https://github.com/toystar4u/pointer/blob/main/latest/win64/ppprtk_run.exe
 - [POINTer](https://github.com/toystar4u/pointer/blob/main/latest/pointer/ppprtk_run) : https://github.com/toystar4u/pointer/blob/main/latest/pointer/ppprtk_run
+
+### SSR2OSR
+- [WIN64](https://github.com/toystar4u/pointer/blob/main/latest/win64/ssr2osr_run.exe) : https://github.com/toystar4u/pointer/blob/main/latest/win64/ssr2osr_run.exe
 - [RPi](https://github.com/toystar4u/pointer/blob/main/latest/rpi/ssr2osr_run)        : https://github.com/toystar4u/pointer/blob/main/latest/rpi/ssr2osr_run
 - [MBC](https://github.com/toystar4u/pointer/blob/main/latest/mbc/ssr2osr_run)        : https://github.com/toystar4u/pointer/blob/main/latest/mbc/ssr2osr_run
