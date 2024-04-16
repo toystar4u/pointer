@@ -10,5 +10,9 @@ POINTer S/W Release
 
 ### SSR2OSR
 - [WIN64](https://github.com/toystar4u/pointer/blob/main/latest/win64/ssr2osr_run.exe) : https://github.com/toystar4u/pointer/blob/main/latest/win64/ssr2osr_run.exe
+- [POINTer](https://github.com/toystar4u/pointer/blob/main/latest/pointer/ssr2osr_run) : https://github.com/toystar4u/pointer/blob/main/latest/pointer/ssr2osr_run
 - [RPi](https://github.com/toystar4u/pointer/blob/main/latest/rpi/ssr2osr_run)        : https://github.com/toystar4u/pointer/blob/main/latest/rpi/ssr2osr_run
 - [MBC](https://github.com/toystar4u/pointer/blob/main/latest/mbc/ssr2osr_run)        : https://github.com/toystar4u/pointer/blob/main/latest/mbc/ssr2osr_run
+
+### Display Server
+- [POINTer](https://github.com/toystar4u/pointer/blob/main/latest/pointer/dispserver) : https://github.com/toystar4u/pointer/blob/main/latest/pointer/dispserver
