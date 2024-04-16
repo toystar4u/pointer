@@ -1,4 +1,4 @@
-# pointer
+# POINTer S/W
 POINTer S/W Release
 
 ## Latest Version
