@@ -8,7 +8,6 @@ POINTer S/W Release
 - [POINTer](https://github.com/toystar4u/pointer/blob/main/latest/pointer/ppprtk_run) : https://github.com/toystar4u/pointer/blob/main/latest/pointer/ppprtk_run
 - [RPi](https://github.com/toystar4u/pointer/blob/main/latest/rpi/ppprtk_run)         : https://github.com/toystar4u/pointer/blob/main/latest/rpi/ppprtk_run
 
-- 
 ### SSR2OSR
 - [WIN64](https://github.com/toystar4u/pointer/blob/main/latest/win64/ssr2osr_run.exe) : https://github.com/toystar4u/pointer/blob/main/latest/win64/ssr2osr_run.exe
 - [RPi](https://github.com/toystar4u/pointer/blob/main/latest/rpi/ssr2osr_run)        : https://github.com/toystar4u/pointer/blob/main/latest/rpi/ssr2osr_run
