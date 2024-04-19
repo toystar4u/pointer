@@ -2,7 +2,7 @@
 
 REPO_URL=https://github.com/toystar4u/pointer/raw/main/latest/pointer
 
-ROOT =/home/mendel/toystar/pnt-distro
+ROOT=/home/mendel/toystar/pnt-distro
 TARGET=$ROOT/examples
 
 #download version file
@@ -38,7 +38,9 @@ then
 		## cleanup
 		#echo "==> cleanup...."
 		#rm -rf $TARGET/S$W.*
-	done 
+	done
+
+	echo "[UPGRADE] Done: upgraded to $CVER" 
 else 
 	echo "[UPGRADE] The latest version is already installed: $PVER"
 
