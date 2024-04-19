@@ -1,6 +1,18 @@
 # POINTer S/W
 POINTer S/W Release
 
+### S/W Upgrade
+
+- POINTer
+```
+$ cd ~/toystar/pnt-distro
+$ wget https://github.com/toystar4u/pointer/raw/main/latest/pointer/upgrade.sh
+$ sudo chmod +x upgrade.sh
+$ ./upgrade.sh
+```
+
+
+
 ## Latest Version
 
 ### PPPRTK
