@@ -12,8 +12,14 @@ wget ${REPO_URL}/version.txt -O $ROOT/version.txt.tmp
 PVER="$(cat version.txt)"
 CVER="$(cat version.txt.tmp)"
 
+if [ -z $CVER ];
+then
+	echo "Version Check Failed :: check the network connection"
+	exit 0
+fi
 
-if [ -z $PVER ] || [ -z $CVER ] || (( $(echo "$CVER > $PVER" |bc -l) ));
+
+if [ -z $PVER ] || (( $(echo "$CVER > $PVER" |bc -l) ));
 then
 	echo "New version available: $CVER"
 	mv version.txt.tmp version.txt
