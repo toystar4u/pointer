@@ -3,13 +3,22 @@ POINTer S/W Release
 
 ### S/W Upgrade
 
-- POINTer
-```
-$ cd ~/toystar/pnt-distro
-$ wget https://github.com/toystar4u/pointer/raw/main/latest/pointer/upgrade.sh
-$ sudo chmod +x upgrade.sh
-$ ./upgrade.sh
-```
+- Update
+  ```
+  $ cd <SW root>
+  $ wget https://github.com/toystar4u/pointer/raw/main/latest/<platform>/<sw>
+  $ sudo chmod +x <sw>
+  ```
+  * `platform`: win64, pointer, rpi, mbc
+  * `sw`      : ppprtk_run, ssr2osr_run
+
+- POINTer: Batch Udpate
+  ```
+  $ cd ~/toystar/pnt-distro
+  $ wget https://github.com/toystar4u/pointer/raw/main/latest/pointer/upgrade.sh
+  $ sudo chmod +x upgrade.sh
+  $ ./upgrade.sh
+  ```
 
 
 
