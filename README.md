@@ -3,7 +3,7 @@ POINTer S/W Release
 
 ### S/W Upgrade
 
-- Update
+- Individual software update
   ```
   $ cd <SW root>
   $ wget https://github.com/toystar4u/pointer/raw/main/latest/<platform>/<sw>
@@ -12,7 +12,7 @@ POINTer S/W Release
   * `platform`: win64, pointer, rpi, mbc
   * `sw`      : ppprtk_run, ssr2osr_run
 
-- POINTer: Batch Udpate
+- POINTer: Batch udpate
   ```
   $ cd ~/toystar/pnt-distro
   $ wget https://github.com/toystar4u/pointer/raw/main/latest/pointer/upgrade.sh
