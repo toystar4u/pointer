@@ -3,7 +3,7 @@
 REPO_URL=https://github.com/toystar4u/pointer/raw/main/latest/mbc
 
 ROOT=/home/pi/keti
-TARGET=$ROOT/examples
+TARGET=$ROOT
 
 #download version file
 wget ${REPO_URL}/version.txt -O $ROOT/version.txt.tmp
