@@ -19,6 +19,13 @@ POINTer S/W Release
   $ sudo chmod +x upgrade.sh
   $ ./upgrade.sh
   ```
+- MBC: Batch udpate
+  ```
+  $ cd ~/keti
+  $ wget https://github.com/toystar4u/pointer/raw/main/latest/mbc/upgrade.sh
+  $ sudo chmod +x upgrade.sh
+  $ ./upgrade.sh
+  ```
 
 
 
