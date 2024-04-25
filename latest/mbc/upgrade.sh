@@ -1,8 +1,8 @@
 #!/bin/bash
 
-REPO_URL=https://github.com/toystar4u/pointer/raw/main/latest/pointer
+REPO_URL=https://github.com/toystar4u/pointer/raw/main/latest/mbc
 
-ROOT=/home/mendel/toystar/pnt-distro
+ROOT=/home/pi/keti
 TARGET=$ROOT/examples
 
 #download version file
@@ -24,7 +24,7 @@ then
 	echo "[UPGRADE] New version available: $CVER"
 	mv version.txt.tmp version.txt
 
-	SWLIST="ppprtk_run ssr2osr_run ssr_test ssr_test_debug mbcssr_test mbcssr_test_debug"
+	SWLIST="ssr2osr_run ssr_test ssr_test_debug mbcssr_test mbcssr_test_debug"
 
 	for SW in $SWLIST
 	do
