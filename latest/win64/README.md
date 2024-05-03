@@ -48,7 +48,7 @@ options:
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2024.04.15
+v2024.05.03
 ```
 
 ## Release Log
