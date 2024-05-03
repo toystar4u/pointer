@@ -53,4 +53,10 @@ v2024.05.03
 
 ## Release Log
 - v2024-05-03
+  * support the dynamic positioning
+  * add inital HDOP/VDOP compuation
+    
 - v2024-04-15
+  * add command-line option for setting rcv antenna
+  * change the interpolation method based on GRIDs
+  * add an option for fixed RS position
