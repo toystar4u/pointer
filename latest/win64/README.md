@@ -56,6 +56,10 @@ v2024.05.08
 ```
 
 ## Release Log
+- v2024-05-08
+  * support the output device and log stream
+  * add the output format(NMEA GPGGA/SSRPOS with PL)
+
 - v2024-05-03
   * support the dynamic positioning
   * add inital HDOP/VDOP compuation
