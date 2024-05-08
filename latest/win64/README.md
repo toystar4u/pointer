@@ -1,6 +1,6 @@
 ## Options
 ```
-ppprtk_run.exe -h
+$ ./ppprtk_run.exe -h
 
 usage: D:\toystar\projects\PNT\examples\ppprtk_run.exe [-h] [options]
 options:
@@ -31,8 +31,12 @@ options:
     -c  specify the DCB file name(default: ./cfgs/P1C1_RINEX.DCB)
     -a  enable NoVatel ASCII mode(default: Binary mode)
     -k  specify the folder path for logging(default: ./data)
+    -O  specify output port(default: ttyMAX0) 
+    -F  specify output format when the output port or output logging are avaialble
+                0*: normal NMEA GPGGA, 1: only GPGGA for SPP, 2: only GPGGA for PPPRTK w/ PL
+                3 : SSRPOS,  4: (SPP + PPPRTK) GPGGA,   5: (SPP+PPPRTK) GPGGA + SSRPOS
     -M  specify the MBC device serial port or TCP IP:port(default: ttymxc2)
-                        IP:port for TCP connection(default port: 7777) 
+                        IP:port for TCP connection(default port: 7777)
     -S  specify the SSR mode(h*: hybrid, p: POINT only, m: MBC only)
     -P  specify the Reference Position(default: DASN POS)
                e.g) -P "[-3027298.428, 4103289.187, 3818547.016]"
@@ -43,12 +47,12 @@ options:
     -X  specify the diplay server IP:port(default: localhost:54321)
     -U  enable to update the reference postion(dynamic positioning)
     -l  enable the redirection of STDOUT/STDERR to a file
-    -o  enable to log SSRPOS to a file
+    -o  enable to log Output(GPGGA/SSRPOS) to a file
     -r  enable to log raw GPS/RTCM to a file
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2024.05.03
+v2024.05.08
 ```
 
 ## Release Log
