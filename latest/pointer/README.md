@@ -56,6 +56,9 @@ v2024.05.08
 ```
 
 ## Release Log
+- v2024-05-13
+  * POINT SSR SMT05 changed
+    
 - v2024-05-08
   * support the output device and log stream
   * add the output format(NMEA GPGGA/SSRPOS with PL)
