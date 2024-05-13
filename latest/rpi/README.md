@@ -2,6 +2,7 @@
 ```
 $ ./ssr2osr_run -h
 
+
 usage: ./ssr2osr_run [-h] [options]
 options:
     -h  show this message
@@ -29,6 +30,8 @@ options:
     -R  specify the rcv antenna name(default: none) 
                e.g) -R "NOV850   NONE" 
                e.g) -R "TRM59800.00     SCIS" 
+    -T  specify the Timing Reference 
+               g: GPS-based, s*: SSR-based, h: SSR-based @ GPS
     -a  specify the ATX file name(default: ./cfgs/igs14.atx)
     -p  specify the folder path for logging(default: ./data) 
     -s  specify the SSR mode(h*: hybrid, p: POINT only, m: MBC only) 
@@ -37,11 +40,15 @@ options:
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2024.05.03
+v2024.05.13
 ```
 
 
 ## Release Log
+- 2024-05-13 : 
+  * POINT SSR SMT05 changed
+  * add Timing Reference options
+
 - v2024-05-03
   * change the SatPOS/VEL/EL/AZ computation methods for SSR2OSR
   * save the floating-point GPS epoch for logging OSR data
