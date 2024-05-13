@@ -52,10 +52,13 @@ options:
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2024.05.08
+v2024.05.13
 ```
 
 ## Release Log
+- v2024-05-08
+  * POINT SSR SMT05 changed
+    
 - v2024-05-08
   * support the output device and log stream
   * add the output format(NMEA GPGGA/SSRPOS with PL)
