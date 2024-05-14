@@ -45,7 +45,8 @@ v2024.05.13
 
 
 ## Release Log
-- 2024-05-14 : 
+- 2024-05-14 :
+  * change the default Ublox UART baudrate to 115200
   * handle NaN value for TROP interpolation
   * reset the PNTSolver when solution is NaN value
   
