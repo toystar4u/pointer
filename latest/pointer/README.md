@@ -56,6 +56,10 @@ v2024.05.13
 ```
 
 ## Release Log
+- 2024-05-14 : 
+  * handle NaN value for TROP interpolation
+  * reset the PNTSolver when solution is NaN value
+    
 - v2024-05-13
   * POINT SSR SMT05 changed
     
