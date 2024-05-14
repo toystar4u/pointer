@@ -31,7 +31,7 @@ options:
                e.g) -R "NOV850   NONE" 
                e.g) -R "TRM59800.00     SCIS" 
     -T  specify the Timing Reference 
-               g: GPS-based, s*: SSR-based, h: SSR-based @ GPS
+               g*: GPS-based, s: SSR-based, h: SSR-based @ GPS
     -a  specify the ATX file name(default: ./cfgs/igs14.atx)
     -p  specify the folder path for logging(default: ./data) 
     -s  specify the SSR mode(h*: hybrid, p: POINT only, m: MBC only) 
