@@ -47,14 +47,15 @@ v2024.05.14
 ## Release Log
 - 2024-05-14 :
   * change the default Ublox UART baudrate to 115200
-  * change the default -T option to 'g'
+  * change the default `-T` option to `g`
   * handle NaN value for TROP interpolation
   
 - 2024-05-13 : 
   * POINT SSR SMT05 changed
-  * add Timing Reference options
+  * add a Timing Reference option(`-T`)
 
 - v2024-05-03
   * change the SatPOS/VEL/EL/AZ computation methods for SSR2OSR
   * save the floating-point GPS epoch for logging OSR data
+    
 - v2024-04-15
