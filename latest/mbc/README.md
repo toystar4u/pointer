@@ -49,7 +49,6 @@ v2024.05.14
   * change the default Ublox UART baudrate to 115200
   * change the default -T option to 'g'
   * handle NaN value for TROP interpolation
-  * reset the PNTSolver when solution is NaN value
   
 - 2024-05-13 : 
   * POINT SSR SMT05 changed
