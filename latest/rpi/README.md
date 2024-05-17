@@ -63,9 +63,10 @@ $ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -n
 
 ## Release Log
 - 2024-05-17 : 
-    * support NovAtel RTK(PwrPak7) with `-n` option
-	* increase the buffer size of NoVatel Parser
-  
+  * support NovAtel RTK(PwrPak7) with `-n` option
+  * increase the buffer size of NoVatel Parser
+  * remove duplicated GPS OBS data
+
 - 2024-05-14 :
   * change the default Ublox UART baudrate to 115200
   * change the default `-T` option to `g`
