@@ -44,6 +44,23 @@ v2024.05.17
 ```
 
 
+## Usage
+### UBlox
+```
+$ ./ssr2osr_run -d ttyAMA0
+```
+
+### NovAtel
+- OSR input port: USB2 port(ttyUSB1)
+```
+# USB COM port
+$ ./ssr2osr_run -d ttyUSB2 -o ttyUSB1 -n
+```
+```
+# ICOM port
+$ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -n
+```
+
 ## Release Log
 - 2024-05-17 : 
     * support NovAtel RTK(PwrPak7) with `-n` option
