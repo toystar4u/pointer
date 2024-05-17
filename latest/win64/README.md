@@ -52,10 +52,13 @@ options:
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2024.05.13
+v2024.05.17
 ```
 
 ## Release Log
+- 2024-05-17 : 
+    * increase the buffer size of NoVatel Parser
+
 - 2024-05-14 : 
   * change the default Ublox UART baudrate to 115200
   * handle NaN value for TROP interpolation
