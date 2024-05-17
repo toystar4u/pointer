@@ -40,11 +40,15 @@ options:
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2024.05.14
+v2024.05.17
 ```
 
 
 ## Release Log
+- 2024-05-17 : 
+    * support NovAtel RTK(PwrPak7) with `-n` option
+	* increase the buffer size of NoVatel Parser
+  
 - 2024-05-14 :
   * change the default Ublox UART baudrate to 115200
   * change the default `-T` option to `g`
