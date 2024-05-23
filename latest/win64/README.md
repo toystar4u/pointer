@@ -56,6 +56,9 @@ v2024.05.17
 ```
 
 ## Release Log
+- 2024-05-23 :
+  * fix bugs when the internet is unavailable
+
 - 2024-05-17 : 
     * increase the buffer size of NoVatel Parser
 
