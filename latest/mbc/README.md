@@ -2,7 +2,6 @@
 ```
 $ ./ssr2osr_run -h
 
-
 usage: ./ssr2osr_run [-h] [options]
 options:
     -h  show this message
@@ -35,12 +34,13 @@ options:
     -a  specify the ATX file name(default: ./cfgs/igs14.atx)
     -p  specify the folder path for logging(default: ./data) 
     -s  specify the SSR mode(h*: hybrid, p: POINT only, m: MBC only) 
+    -N  disable the relocation of RS position when too far from the origin RS 
     -l  enable the redirection of STDOUT/STDERR to a file
     -r  enable to log raw GPS/RTCM to a file
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2024.05.14
+v2024.05.23
 ```
 
 
