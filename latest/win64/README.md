@@ -16,7 +16,7 @@ options:
     -n  specify the client name
     -t  specify the time in minutes (default: 0(infinite))
     -s  specify solution option(0: sync., 1*: async.)
-    -i  specify interpolation mode for Iono/Trop
+    -i  specify interpolation mode for Iono/Trop 
               0*   : automatic grid selection,
               1 ~ 9: single grid(1 ~ 9 grid id),
               a ~ w: single grid(10 ~ 32 grid id),
@@ -31,14 +31,14 @@ options:
     -c  specify the DCB file name(default: ./cfgs/P1C1_RINEX.DCB)
     -a  enable NoVatel ASCII mode(default: Binary mode)
     -k  specify the folder path for logging(default: ./data)
-    -O  specify output port(default: ttyMAX0) 
+    -O  specify output port(default: ttyMAX0)
     -F  specify output format when the output port or output logging are avaialble
                 0*: normal NMEA GPGGA, 1: only GPGGA for SPP, 2: only GPGGA for PPPRTK w/ PL
                 3 : SSRPOS,  4: (SPP + PPPRTK) GPGGA,   5: (SPP+PPPRTK) GPGGA + SSRPOS
     -M  specify the MBC device serial port or TCP IP:port(default: ttymxc2)
                         IP:port for TCP connection(default port: 7777)
     -S  specify the SSR mode(h*: hybrid, p: POINT only, m: MBC only)
-    -P  specify the Reference Position(default: DASN POS)
+    -P  specify the Reference Position(default: DASN POS) 
                e.g) -P "[-3027298.428, 4103289.187, 3818547.016]"
                e.g) -P [] for empty RS pos
     -R  specify the rcv antenna name(default: "NOV850   NONE")
@@ -52,7 +52,7 @@ options:
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2024.05.17
+v2024.05.23
 ```
 
 ## Release Log
