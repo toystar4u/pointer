@@ -45,6 +45,12 @@ v2024.05.23
 
 
 ## Release Log
+
+- 2024-05-23 : 
+  * fix bug: relocate RS position
+  * add an option(`-N`) for disabling the relocation of RS position when too far from the origin RS
+  * ignore the port number restriction for the OSR output port
+    
 - 2024-05-14 :
   * change the default Ublox UART baudrate to 115200
   * change the default `-T` option to `g`
