@@ -52,10 +52,13 @@ options:
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2024.05.17
+v2024.05.23
 ```
 
 ## Release Log
+- 2024-05-23 :
+  * fix bugs when the internet is unavailable
+  
 - 2024-05-17 :
   * increase the buffer size of NoVatel Parser
   
