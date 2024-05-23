@@ -2,7 +2,6 @@
 ```
 $ ./ssr2osr_run -h
 
-
 usage: ./ssr2osr_run [-h] [options]
 options:
     -h  show this message
@@ -35,12 +34,13 @@ options:
     -a  specify the ATX file name(default: ./cfgs/igs14.atx)
     -p  specify the folder path for logging(default: ./data) 
     -s  specify the SSR mode(h*: hybrid, p: POINT only, m: MBC only) 
+    -N  disable the relocation of RS position when too far from the origin RS 
     -l  enable the redirection of STDOUT/STDERR to a file
     -r  enable to log raw GPS/RTCM to a file
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2024.05.17
+v2024.05.23
 ```
 
 
@@ -62,6 +62,12 @@ $ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -n
 ```
 
 ## Release Log
+- 2024-05-23 : 
+  * fix bug: relocate RS position
+  * add an option(`-N`) for disabling the relocation of RS position when too far from the origin RS
+  * ignore the port number restriction for the OSR output port
+
+
 - 2024-05-17 : 
   * support NovAtel RTK(PwrPak7) with `-n` option
   * increase the buffer size of NoVatel Parser
