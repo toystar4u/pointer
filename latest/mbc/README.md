@@ -48,7 +48,7 @@ v2024.05.28
 - 2024-05-28 : 
   * remove the limit for MBS SSR port
   * change the default port for MBC SSR to 14007
-  * add the Universal receiver with `-D` option(NOT COMPLETE)
+  * add the Universal receiver with `-D` option(NOT COMPLETED)
   
 - 2024-05-23 : 
   * fix bug: relocate RS position
