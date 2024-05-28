@@ -7,10 +7,9 @@ echo "--------------------------------------< keti.sh >-------------------------
 
 # TCP 포트로 출력
 sudo /usr/bin/socat -u udp-listen:13006,fork tcp-listen:9999,reuseaddr,fork &   # NMEA+UBX TCP output
-sudo /usr/bin/socat -u udp-listen:13007,fork tcp-listen:7777,reuseaddr,fork &   # [X] SSR RTCM TCP output
+sudo /usr/bin/socat -u udp-listen:13007,fork tcp-listen:7777,reuseaddr,fork &   # SSR RTCM TCP output
 sudo /usr/bin/socat -u udp-listen:10007,fork tcp-listen:5555,reuseaddr,fork &   # SSR RTCM TCP output
 sudo /usr/bin/socat -u udp-listen:12007,fork tcp-listen:6666,reuseaddr,fork &   # SSR RTCM TCP output
-
 
 #sudo /usr/bin/socat -u tcp-listen:5555,reuseaddr,fork upd:localhost:10010 &     # OSR input 
 
@@ -26,13 +25,15 @@ sudo /usr/bin/socat -u udp-listen:12007,fork tcp-listen:6666,reuseaddr,fork &   
 #         z  : grid list
 #            e.g) -i z -g "[1,2,3,4]" 
 
+## :: SSR port: tcp:localhost:14007
 
 ## UDP-based
 #sleep 1.5
 #/home/pi/keti/ssr2osr_run -d udp:0.0.0.0:14006 -o udp:localhost:10010 -s m  &    # SSR2OSR
 
-## TCP-based
-sudo /usr/bin/socat -u udp-listen:14006 tcp-listen:14006,reuseaddr,fork &     # UDP->TCP
+## TCP-based 
+sudo /usr/bin/socat -u udp-listen:14007 tcp-listen:14007,reuseaddr,fork &     # SSR : UDP->TCP
+sudo /usr/bin/socat -u udp-listen:14006 tcp-listen:14006,reuseaddr,fork &     # UBLX: UDP->TCP
 sleep  5
 /home/pi/keti/ssr2osr_run -d tcp:localhost:14006 -o udp:localhost:10010 -s m   &  # SSR2OSR
 
