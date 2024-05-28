@@ -1,3 +1,5 @@
+## Options
+```
 usage: ./ssr2osr_run [-h] [options]
 options:
     -h  show this message
@@ -38,3 +40,32 @@ options:
     -z  enable to log results to MAT files
 
 v2024.05.28
+```
+
+
+## Release Log
+
+- 2024-05-28 : 
+  * remove the limit for MBS SSR port
+  * change the default port for MBC SSR to 14007
+  * add the Universal receiver with `-D` option(NOT COMPLETE)
+  
+- 2024-05-23 : 
+  * fix bug: relocate RS position
+  * add an option(`-N`) for disabling the relocation of RS position when too far from the origin RS
+  * ignore the port number restriction for the OSR output port
+    
+- 2024-05-14 :
+  * change the default Ublox UART baudrate to 115200
+  * change the default `-T` option to `g`
+  * handle NaN value for TROP interpolation
+  
+- 2024-05-13 : 
+  * POINT SSR SMT05 changed
+  * add a Timing Reference option(`-T`)
+
+- v2024-05-03
+  * change the SatPOS/VEL/EL/AZ computation methods for SSR2OSR
+  * save the floating-point GPS epoch for logging OSR data
+- v2024-04-15
+  * upload initial SW
