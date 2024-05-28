@@ -7,7 +7,9 @@ echo "--------------------------------------< keti.sh >-------------------------
 
 # TCP 포트로 출력
 sudo /usr/bin/socat -u udp-listen:13006,fork tcp-listen:9999,reuseaddr,fork &   # NMEA+UBX TCP output
-sudo /usr/bin/socat -u udp-listen:13007,fork tcp-listen:7777,reuseaddr,fork &   # RTCM TCP output
+sudo /usr/bin/socat -u udp-listen:13007,fork tcp-listen:7777,reuseaddr,fork &   # SSR RTCM TCP output
+sudo /usr/bin/socat -u udp-listen:10007,fork tcp-listen:5555,reuseaddr,fork &   # SSR RTCM TCP output
+sudo /usr/bin/socat -u udp-listen:12007,fork tcp-listen:6666,reuseaddr,fork &   # SSR RTCM TCP output
 
 
 #sudo /usr/bin/socat -u tcp-listen:5555,reuseaddr,fork upd:localhost:10010 &     # OSR input 
