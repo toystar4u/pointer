@@ -39,7 +39,15 @@ then
 		#echo "==> cleanup...."
 		#rm -rf $TARGET/S$W.*
 	done
-
+	
+ 	## update keti.sh
+  	echo "==> update keti.sh...."
+   	MBCRTK=/home/pi/mbcrtk
+    	mv $MBCRTK/keti.sh $MBCRTK/keti.sh.bak
+     
+   	wget ${REPO_URL}/keti.sh -P $MBCRTK
+	sudo chmod +x $MBCRTK/keti.sh
+ 
 	echo "[UPGRADE] Done: upgraded to $CVER" 
 else 
 	echo "[UPGRADE] The latest version is already installed: $PVER"
