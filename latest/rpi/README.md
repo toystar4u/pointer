@@ -1,18 +1,12 @@
 ## Suporting Deives
+
+### Using Vender-specific Messages
 Vender | Device | Messages | Option | Note
 ---|---|---|---|---
-UBlox | zed-f9p | UBX-NAV-POSECEF | -D u | default 
-   a    |    b     | UBX-RXM-SBRFX   |  c   |       d  
+UBlox | ZED-F9P | UBX-NAV-POSECEF,UBX-RXM-SBRFX | -D u | default 
+NoVatel | OEM-7 | BESTPOS, GPSEPHEM | -D n |  
 
-|             |          Grouping           ||
-First Header  | Second Header | Third Header |
- ------------ | :-----------: | -----------: |
-Content       |          *Long Cell*        ||
-Content       |   **Cell**    |         Cell |
 
-New section   |     More      |         Data |
-And more      | With an escaped '\|'         ||  
-[Prototype table]
 
 ## Options
 ```
