@@ -4,6 +4,15 @@ Vender | Device | Messages | Option | Note
 UBlox | zed-f9p | UBX-NAV-POSECEF | -D u | default 
    a    |    b     | UBX-RXM-SBRFX   |  c   |       d  
 
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+Content       |   **Cell**    |         Cell |
+
+New section   |     More      |         Data |
+And more      | With an escaped '\|'         ||  
+[Prototype table]
 
 ## Options
 ```
