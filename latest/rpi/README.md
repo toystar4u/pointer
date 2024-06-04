@@ -33,7 +33,7 @@ options:
                 TCP port number: 3001 - 3007 for Novatel and 4001 for U-Blox
     -n  use Novatel receiver instead of UBlox
     -o  specify OSR RTCM output device/port(default: GPS input port)
-    -M  specify MBC POINT-SSR input port(default: localhost:7777)
+    -M  specify MBC POINT-SSR input port(default: localhost:14007)
     -t  specify the time in minutes (default: 0(infinite))
     -i  specify interpolation mode for Iono/Trop 
               0*   : automatic grid selection, 
