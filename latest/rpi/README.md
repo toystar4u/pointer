@@ -3,8 +3,20 @@
 ### Using Vender-specific Messages
 Vender | Device | Messages | Option | Note
 ---|---|---|---|---
-UBlox | ZED-F9P | UBX-NAV-POSECEF,UBX-RXM-SBRFX | -D u | default 
+UBlox | ZED-F9P | UBX-NAV-POSECEF,UBX-RXM-SFBRX | -D u | default 
 NoVatel | OEM-7 | BESTPOS, GPSEPHEM | -D n |  
+
+
+
+### Using NMEA GPGGA and RTCM1019 Message
+Vender | Device | Messages | Option | Note
+---|---|---|---|---
+UBlox | ZED-F9P | GPGGA/GNGGA, RTCM1019(not supported) | | N/A 
+NoVatel | OEM-7 | GPGGA, RTCM1019| -D x | TEST OK!
+Treamble | ? | ?, ? | -D x | ?
+
+
+
 
 
 
