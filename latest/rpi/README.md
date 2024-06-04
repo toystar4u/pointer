@@ -8,7 +8,7 @@ NoVatel | OEM-7 | BESTPOS, GPSEPHEM | -D n |
 
 
 
-### Using NMEA GPGGA and RTCM1019 Message
+### Using NMEA GPGGA and RTCM1019 Messages
 Vender | Device | Messages | Option | Note
 ---|---|---|---|---
 UBlox | ZED-F9P | GPGGA/GNGGA, RTCM1019(not supported) | | N/A 
