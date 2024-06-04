@@ -90,6 +90,10 @@ $ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -D x
 ```
 
 ## 4️⃣ Release Log
+- 2024-06-04 : 
+  * fix bug that the undulation(geoid separation) is not considered in the height in BESTPOS and GPGGA
+  * the universal receiver mode is tested on NoVatel 
+
 - 2024-05-23 : 
   * fix bug: relocate RS position
   * add an option(`-N`) for disabling the relocation of RS position when too far from the origin RS
