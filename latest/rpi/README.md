@@ -1,9 +1,8 @@
 ## Suporting Deives
-| Vender | Device | Messages | Option | Note |
-----------------------------------------------
-| UBlox | zed-f9p | UBX-NAV-POSECEF | -D u | default |
-|       |         | UBX-RXM-SBRFX   |      |         |
------------------------------------------------------
+Vender | Device | Messages | Option | Note
+---|---|---|---|---
+UBlox | zed-f9p | UBX-NAV-POSECEF | -D u | default 
+       |         | UBX-RXM-SBRFX   |      |         
 
 
 ## Options
