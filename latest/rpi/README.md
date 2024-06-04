@@ -66,7 +66,7 @@ v2024.05.23
 ```
 
 
-## 3️⃣: Usage
+## 3️⃣ Usage
 ### UBlox
 ```
 $ ./ssr2osr_run -d ttyAMA0
@@ -89,7 +89,7 @@ $ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -D n
 $ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -D x
 ```
 
-## 4️⃣: Release Log
+## 4️⃣ Release Log
 - 2024-05-23 : 
   * fix bug: relocate RS position
   * add an option(`-N`) for disabling the relocation of RS position when too far from the origin RS
