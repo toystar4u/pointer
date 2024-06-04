@@ -1,26 +1,26 @@
-## Suported Devies
+## 1️⃣ Suported Devies
 
 ### Using Vender-specific Messages
-Vender | Device | Messages | Option | Note
----|---|---|---|---
-UBlox | ZED-F9P | UBX-NAV-POSECEF,UBX-RXM-SFBRX | -D u | default 
-NoVatel | OEM-7 | BESTPOS, GPSEPHEM | -D n |  
+Vender | Device | Messages | Option | Tested| Note
+---|---|---|---|---|---
+UBlox | ZED-F9P | UBX-NAV-POSECEF,UBX-RXM-SFBRX | -D u | ✅ |default 
+NoVatel | OEM-7 | BESTPOS, GPSEPHEM | -D n | ✅ |  
 
 
 
 ### Using NMEA GPGGA and RTCM1019 Messages
-Vender | Device | Messages | Option | Note
+Vender | Device | Messages | Option | Tested
 ---|---|---|---|---
-UBlox | ZED-F9P | GPGGA/GNGGA, RTCM1019(not supported) | | N/A 
-NoVatel | OEM-7 | GPGGA, RTCM1019| -D x | TEST OK!
-Treamble | ? | ?, ? | -D x | ?
+UBlox | ZED-F9P | GPGGA/GNGGA, RTCM1019(not supported) | | ❌ 
+NoVatel | OEM-7 | GPGGA, RTCM1019| -D x | ✅
+Treamble | ? | ?, ? | -D x | ❓
 
 
 
 
 
 
-## Options
+## 2️⃣ Options
 ```
 $ ./ssr2osr_run -h
 
@@ -66,7 +66,7 @@ v2024.05.23
 ```
 
 
-## Usage
+## 3️⃣: Usage
 ### UBlox
 ```
 $ ./ssr2osr_run -d ttyAMA0
@@ -89,7 +89,7 @@ $ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -D n
 $ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -D x
 ```
 
-## Release Log
+## 4️⃣: Release Log
 - 2024-05-23 : 
   * fix bug: relocate RS position
   * add an option(`-N`) for disabling the relocation of RS position when too far from the origin RS
