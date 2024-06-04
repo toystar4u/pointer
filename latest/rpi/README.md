@@ -76,11 +76,17 @@ $ ./ssr2osr_run -d ttyAMA0
 - OSR input port: USB2 port(ttyUSB1)
 ```
 # USB COM port
-$ ./ssr2osr_run -d ttyUSB2 -o ttyUSB1 -n
+$ ./ssr2osr_run -d ttyUSB2 -o ttyUSB1 -D n
 ```
 ```
 # ICOM port
-$ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -n
+$ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -D n
+```
+
+### Any devices that are supporting NMEA GPGGA and RTCM1019 messages
+```
+# NoVatel ICOM port
+$ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -D x
 ```
 
 ## Release Log
