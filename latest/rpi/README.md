@@ -1,4 +1,4 @@
-## Suporting Deives
+## Suporting Devies
 
 ### Using Vender-specific Messages
 Vender | Device | Messages | Option | Note
