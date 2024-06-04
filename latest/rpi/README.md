@@ -2,7 +2,7 @@
 Vender | Device | Messages | Option | Note
 ---|---|---|---|---
 UBlox | zed-f9p | UBX-NAV-POSECEF | -D u | default 
-       |         | UBX-RXM-SBRFX   |      |         
+   a    |    b     | UBX-RXM-SBRFX   |  c   |       d  
 
 
 ## Options
