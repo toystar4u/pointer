@@ -12,14 +12,14 @@ POINTer S/W Release
   * `platform`: win64, pointer, rpi, mbc
   * `sw`      : ppprtk_run, ssr2osr_run
 
-- POINTer: Batch udpate
+- POINTer: Batch update
   ```
   $ cd ~/toystar/pnt-distro
   $ wget https://github.com/toystar4u/pointer/raw/main/latest/pointer/upgrade.sh
   $ sudo chmod +x upgrade.sh
   $ ./upgrade.sh
   ```
-- MBC: Batch udpate
+- MBC: Batch update
   ```
   $ cd ~/keti
   $ wget https://github.com/toystar4u/pointer/raw/main/latest/mbc/upgrade.sh
