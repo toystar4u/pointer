@@ -29,6 +29,7 @@ Treamble | ? | ?, ? | -D x | ❓
 
 ## 2️⃣ Options
 ```
+
 usage: ./ssr2osr_run [-h] [options]
 options:
     -h  show this message
@@ -37,20 +38,21 @@ options:
     -d  specify the GPS serial port or TCP icom port
               default serial: ttyACM0 for UBlox and ttyUSB4 for Novatel 
               TCP port number: 3001 - 3007 for Novatel and 4001 for U-Blox
-    -n  use Novatel receiver instead of UBlox(deprecivated. use `-D` option)
+    -n  use Novatel receiver instead of UBlox(depreciated. use `-D` option)
     -D  specify the type of receiver(u*:UBlox, n:NovAtel, x: any device that supports GPGGA+RTCM1019)
     -o  specify OSR RTCM output device/port(default: GPS input port)
     -M  specify MBC POINT-SSR input port(default: tcp:localhost:14007)
+    -e  specify the dedicated port for receiving RTCM1019 messages when `-D x` option is used(default: none)
     -t  specify the time in minutes (default: 0(infinite))
     -i  specify interpolation mode for Iono/Trop 
               0*   : automatic grid selection, 
               1 ~ 9: single grid(1 ~ 9 grid id), 
               a ~ w: single grid(10 ~ 32 grid id),
                     a:10, b:11, c:12, d:13, e:14, f:15, g:16, h:17, i:18, j:19 
-                    k:20, l:21, m:22, n:23, o:24, p:25, q:26, r: 27, s:28, t:29
+                    k:20, l:21, m:22, n:23, o:24, p:25, q:26, r:27, s:28, t:29
                     u:30, v:31, w:32 
               z    : grid list
-    -g  specify the grid list when '-i z' 
+    -g  specify the grid list when '-i z' option is used
                e.g) -i z -g "[18,19,23,24]" 
     -P  specify the RS Position(default: empty) 
                e.g) -P "[-3027298.428, 4103289.187, 3818547.016]" 
@@ -69,7 +71,7 @@ options:
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2024.06.04
+v2024.06.17
 ```
 
 
@@ -98,7 +100,7 @@ $ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -D n
 $ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -D x
 ```
 - CASE 2 : NoVatel and Treemble
- * `-d` port: GPGGA + RTCM1019
+ * `-d` port: GPGGA
  * `-e` port: dedicated port for RTCM1019
 ```
 $ ./ssr2osr_run -d tcp:192.168.0.224:3002 -e tcp:192.168.0.224:3005 -o tcp:localhost:5555 -D x 
