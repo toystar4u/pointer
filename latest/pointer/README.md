@@ -56,6 +56,13 @@ v2024.06.17
 ```
 
 ## Release Log
+- 2024-06-17 :
+  * update PL computation
+  * reset the PPPRTK solver after 10 seconds of inactivity
+  * fix bug that the undulation(geoid separation) is not considered in the height in BESTPOS and GPGGA
+  * remove the port number limitations for MBS SSR
+  * change the default port for MBC SSR to 14007
+    
 - 2024-05-23 :
   * fix bugs when the internet is unavailable
   
