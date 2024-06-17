@@ -108,6 +108,9 @@ $ ./ssr2osr_run -d tcp:192.168.0.224:3002 -e tcp:192.168.0.224:3005 -o tcp:local
 
 
 ## 4️⃣ Release Log
+2024-06-17 : 
+		* add the dedicated port for receiving RTCM1019 messages
+
 - 2024-06-04 : 
   * fix bug that the undulation(geoid separation) is not considered in the height in BESTPOS and GPGGA
   * the universal receiver mode is tested on NoVatel 
