@@ -94,14 +94,14 @@ $ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -D n
 
 ### Any devices that are supporting NMEA GPGGA and RTCM1019 messages
 - CASE 1 : NoVatel
- * `-d` port: GPGGA + RTCM1019 
+   * `-d` port: GPGGA + RTCM1019 
 ```
 # NoVatel ICOM port
 $ ./ssr2osr_run -d tcp:192.168.1.5:3002 -o ttyUSB1 -D x
 ```
 - CASE 2 : NoVatel and Treemble
- * `-d` port: GPGGA
- * `-e` port: dedicated port for RTCM1019
+   * `-d` port: GPGGA
+   * `-e` port: dedicated port for RTCM1019
 ```
 $ ./ssr2osr_run -d tcp:192.168.0.224:3002 -e tcp:192.168.0.224:3005 -o tcp:localhost:5555 -D x 
 ```
