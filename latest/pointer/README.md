@@ -21,7 +21,7 @@ options:
               1 ~ 9: single grid(1 ~ 9 grid id), 
               a ~ w: single grid(10 ~ 32 grid id),
                     a:10, b:11, c:12, d:13, e:14, f:15, g:16, h:17, i:18, j:19 
-                    k:20, l:21, m:22, n:23, o:24, p:25, q:26, r: 27, s:28, t:29
+                    k:20, l:21, m:22, n:23, o:24, p:25, q:26, r:27, s:28, t:29
                     u:30, v:31, w:32 
               z    : grid list
     -g  specify the grid list when '-i z' option is used 
@@ -36,7 +36,7 @@ options:
                 0*: normal NMEA GPGGA, 1: only GPGGA for SPP, 2: only GPGGA for PPPRTK w/ PL
                 3 : SSRPOS,  4: (SPP + PPPRTK) GPGGA,   5: (SPP+PPPRTK) GPGGA + SSRPOS 
     -M  specify the MBC device serial port or TCP IP:port(default: ttymxc2) 
-                        IP:port for TCP connection(default port: 7777) 
+                        IP:port for TCP connection(default port: 14007) 
     -S  specify the SSR mode(h*: hybrid, p: POINT only, m: MBC only) 
     -P  specify the Reference Position(default: DASN POS) 
                e.g) -P "[-3027298.428, 4103289.187, 3818547.016]" 
@@ -52,7 +52,7 @@ options:
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2024.05.23
+v2024.06.17
 ```
 
 ## Release Log
