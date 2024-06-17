@@ -9,12 +9,19 @@ NoVatel | OEM-7 | BESTPOS, GPSEPHEM | -D n | ✅ |
 
 
 ### Using NMEA GPGGA and RTCM1019 Messages
+- Common : `-D x` used
+- CASE 1
+  * `-d` port  : GPGGA + RTCM1019
+- CASE 2
+  * `-d` port : GPGGA
+  * `-e` port : RTCM1019
+
+    
 Vender | Device | Messages | Option | Tested
 ---|---|---|---|:---:
 UBlox | ZED-F9P | GPGGA/GNGGA, RTCM1019(not supported) | | ❌ 
 NoVatel | OEM-7 | GPGGA, RTCM1019| -D x | ✅
 Treamble | ? | ?, ? | -D x | ❓
-
 
 
 
