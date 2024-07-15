@@ -51,11 +51,18 @@ options:
     -r  enable to log raw GPS/RTCM to a file
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
+    -L  enable to split POS and Output log files every days
 
-v2024.06.17
+v2024.07.08
 ```
 
 ## Release Log
+- 2024-07-08 :
+  * add an option that split files every day
+  * reduce the active memory size of gps_data_t and gps_osr_t
+  * fix bug that grid list not applied
+  * use the device or SPP solution instead of corrected SPP for NMEA SPP output 
+
 - 2024-06-17 :
   * update PL computation
   * reset the PPPRTK solver after 10 seconds of inactivity
