@@ -33,8 +33,8 @@ options:
     -k  specify the folder path for logging(default: ./data) 
     -O  specify output port(default: ttyMAX0) 
     -F  specify output format when the output port or output logging are avaialble 
-                0*: normal NMEA GPGGA, 1: only GPGGA for SPP, 2: only GPGGA for PPPRTK w/ PL
-                3 : SSRPOS,  4: (SPP + PPPRTK) GPGGA,   5: (SPP+PPPRTK) GPGGA + SSRPOS 
+                0*: normal NMEA GPGGA, 1: only GPGGA for SPP, 2: POINT
+                3 : SSRPOS,  4: SPP GPGGA + POINT,   5: SPP GPGGA + POINT + SSRPOS 
     -M  specify the MBC device serial port or TCP IP:port(default: ttymxc2) 
                         IP:port for TCP connection(default port: 14007) 
     -S  specify the SSR mode(h*: hybrid, p: POINT only, m: MBC only) 
@@ -53,10 +53,33 @@ options:
     -z  enable to log results to MAT files
     -L  enable to split POS and Output log files every days
 
-v2024.07.08
+v2024.08.16
 ```
 
 ## Release Log
+- 2024-08-16 :
+    * fix TOW rollover problems: loadnav() and bcvelo()
+    * organize the TTL of ephemeris
+    * Monitor...
+        * when the valid and handover flags of the monitor are true, 
+        only accept the result of the PPPRTK solver
+        * if age is the max. value and all buffers are cleared, set the age to 1
+          
+- 2024-08-09 :     
+    * add Monitor; manual update states of the Solver modules
+	* support TM(Time->Measurement) update mode in KalmanFilter
+	* default KF mode: TM
+
+- 2024-07-30 :
+    * remove assert() in the Lambda class
+    * fix bugs in the Lambda class  ==> transpose() function
+    * add linear interpolation to reduce the singularity of Bilinear interpolations 
+        for 2 grids in GridBasedInterpolator class 
+
+- 2024-07-26 :
+    * add EGM2008-5 model for computing the Geoid Height
+    * write POINT log instead of GPGGA for PPPRTK
+
 - 2024-07-08 :
   * add an option that split files every day
   * reduce the active memory size of gps_data_t and gps_osr_t
