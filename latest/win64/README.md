@@ -54,10 +54,18 @@ options:
     -L  enable to split POS and Output log files every days
 
 
-v2024.08.16
+v2024.09.03
 ```
 
 ## Release Log
+
+- 2024-09-03 :
+    * use HDOP/PDOP of the SPP solver for POINT message
+    * fix UTC bug in the NMEA GPGGA/POINT messages
+    * add HDOP/VDOP computation for SPP position form RCV
+    * default KF mode: MT
+    * apply the last version of Monitor(2024-08-23) -- temporal
+  
 - 2024-08-16 :
     * fix TOW rollover problems: loadnav() and bcvelo()
     * organize the TTL of ephemeris
