@@ -53,10 +53,13 @@ options:
     -z  enable to log results to MAT files
     -L  enable to split POS and Output log files every days
 
-v2024.09.03
+v2024.09.09
 ```
 
 ## Release Log
+
+- 2024-09-09 :
+    * add a function that check the validity of keys
 
 - 2024-09-03 :
     * use HDOP/PDOP of the SPP solver for POINT message
