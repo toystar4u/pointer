@@ -54,11 +54,14 @@ options:
     -L  enable to split POS and Output log files every days
 
 
-v2024.09.03
+v2024.09.09
 ```
 
 ## Release Log
-
+- 2024-09-09 :
+    * add a function that check the validity of keys
+    * add options for the CFG file
+      
 - 2024-09-03 :
     * use HDOP/PDOP of the SPP solver for POINT message
     * fix UTC bug in the NMEA GPGGA/POINT messages
