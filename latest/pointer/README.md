@@ -60,6 +60,7 @@ v2024.09.09
 
 - 2024-09-09 :
     * add a function that check the validity of keys
+    * add options for the CFG file 
 
 - 2024-09-03 :
     * use HDOP/PDOP of the SPP solver for POINT message
