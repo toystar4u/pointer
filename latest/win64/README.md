@@ -53,11 +53,15 @@ options:
     -z  enable to log results to MAT files
     -L  enable to split POS and Output log files every days
 
-
-v2024.09.09
+v2024.09.30
 ```
 
 ## Release Log
+
+- 2024-09-30 :
+    * add checkRange() for parsing SSR data
+    * remove assert() in the ZeroDifferencer::selectPivot()
+      
 - 2024-09-09 :
     * add a function that check the validity of keys
     * add options for the CFG file
