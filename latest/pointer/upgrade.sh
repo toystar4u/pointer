@@ -24,7 +24,8 @@ then
 	echo "[UPGRADE] New version available: $CVER"
 	mv version.txt.tmp version.txt
 
-	SWLIST="ppprtk_run ssr2osr_run ssr_test ssr_test_debug mbcssr_test mbcssr_test_debug"
+	#SWLIST="ppprtk_run ssr2osr_run ssr_test ssr_test_debug mbcssr_test mbcssr_test_debug"
+ 	SWLIST="dispserver ppprtk_run ssr2osr_run"
 
 	for SW in $SWLIST
 	do
