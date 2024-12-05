@@ -7,8 +7,11 @@ options:
     -h  show this message
     -f  specify the CFG file name
     -m  specify the mountpoint (default: POINT-KRISO-RT)
-    -d  specify the GPS serial port or TCP icom port (default: ttyUSB4)
-                TCP port number: 3001 - 3007 for Novatel and 4001 for U-Blox
+    -N  specify the NTRIP Caster in 'ip:port' format(default: Hancom caster:2101)
+    -A  specify username:passwd for the NTRIP Caster(default: Hancom caster)
+    -d  specify the GPS serial port or TCP icom port
+                Serial port: ttyUSB4 - ttyUSB6 for Novatel and ttyACM0 for U-Blox
+                TCP port   : 3001 - 3007 for Novatel and 4001 for U-Blox(ONLY DASN)
     -u  use U-Blox receiver instead of Novatel
     -j  specify the R-Mode port(default: ttyMAX2)
     -b  specify the broker IP or sever name
@@ -46,6 +49,7 @@ options:
                e.g) not set: -R "" 
     -X  specify the diplay server IP:port(default: localhost:54321) 
     -U  enable to update the reference postion(dynamic positioning) 
+    -K  use KGD2002
     -l  enable the redirection of STDOUT/STDERR to a file
     -o  enable to log Output(GPGGA/SSRPOS) to a file
     -r  enable to log raw GPS/RTCM to a file
@@ -53,7 +57,7 @@ options:
     -z  enable to log results to MAT files
     -L  enable to split POS and Output log files every days
 
-v2024.09.30
+v2024.12.05
 ```
 
 ## Release Log
