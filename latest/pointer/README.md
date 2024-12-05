@@ -58,6 +58,12 @@ v2024.09.30
 
 ## Release Log
 
+
+- 2024-12-05 :
+    * add a command-line option for KGD2002 transformation
+    * add command-line options for setting the NTRIP caster's IP, port, username, and password 
+    * fix the singularity problem when all z values are same in the Interpolator2D
+
 - 2024-09-30 :
     * add checkRange() for parsing SSR data
     * remove assert() in the ZeroDifferencer::selectPivot()
