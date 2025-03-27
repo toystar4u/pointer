@@ -6,9 +6,9 @@ usage: ./ppprtk_run [-h] [options]
 options:
     -h  show this message
     -f  specify the CFG file name
-    -m  specify the mountpoint (default: POINT-KRISO-RT)
-    -N  specify the NTRIP Caster in 'ip:port' format(default: Hancom caster:2101)
-    -A  specify username:passwd for the NTRIP Caster(default: Hancom caster)
+    -m  specify the mountpoint (default: POINT-RTCM32)
+    -N  specify the NTRIP Caster in 'ip:port' format(default: NMPNT caster:2101)
+    -A  specify username:passwd for the NTRIP Caster(default: NMPNT caster)
     -d  specify the GPS serial port or TCP icom port
                 Serial port: ttyUSB4 - ttyUSB6 for Novatel and ttyACM0 for U-Blox
                 TCP port   : 3001 - 3007 for Novatel and 4001 for U-Blox(ONLY DASN)
@@ -41,14 +41,14 @@ options:
     -M  specify the MBC device serial port or TCP IP:port(default: ttymxc2) 
                         IP:port for TCP connection(default port: 14007) 
     -S  specify the SSR mode(h*: hybrid, p: POINT only, m: MBC only) 
-    -P  specify the Reference Position(default: DASN POS) 
+    -P  specify the Reference Position(default: none 
                e.g) -P "[-3027298.428, 4103289.187, 3818547.016]" 
                e.g) -P [] for empty RS pos
     -R  specify the rcv antenna name(default: "NOV850   NONE") 
                e.g) change : -R "TRM59800.00     SCIS" 
                e.g) not set: -R "" 
     -X  specify the diplay server IP:port(default: localhost:54321) 
-    -U  enable to update the reference postion(dynamic positioning) 
+    -U  disable to update the reference postion(dynamic positioning) 
     -K  use KGD2002
     -l  enable the redirection of STDOUT/STDERR to a file
     -o  enable to log Output(GPGGA/SSRPOS) to a file
@@ -57,11 +57,12 @@ options:
     -z  enable to log results to MAT files
     -L  enable to split POS and Output log files every days
 
-v2024.12.05
+v2025.03.27
 ```
 
 ## Release Log
-
+- 2025-03-27  :
+    * change default options
 
 - 2024-12-05 :
     * add a command-line option for KGD2002 transformation
