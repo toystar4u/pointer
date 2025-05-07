@@ -34,7 +34,9 @@ usage: ./ssr2osr_run [-h] [options]
 options:
     -h  show this message
     -f  specify the CFG file name
-    -m  specify the mountpoint (default: POINT-KRISO-RT)
+    -m  specify the mountpoint (default: POINT-RTCM32)
+    -C  specify the NTRIP Caster in 'ip:port' format(default: NMPNT caster:2101)
+    -A  specify username:passwd for the NTRIP Caster(default: NMPNT caster)
     -d  specify the GPS serial port or TCP icom port
               default serial: ttyACM0 for UBlox and ttyUSB4 for Novatel 
               TCP port number: 3001 - 3007 for Novatel and 4001 for U-Blox
@@ -71,7 +73,7 @@ options:
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2024.06.17
+v2025.05.07
 ```
 
 
@@ -108,6 +110,9 @@ $ ./ssr2osr_run -d tcp:192.168.0.224:3002 -e tcp:192.168.0.224:3005 -o tcp:local
 
 
 ## 4️⃣ Release Log
+- 2025-05-07 :
+		* add command-line options for setting the NTRIP caster's IP, port, username, and password 
+  
 - 2024-06-17 : 
   * add the dedicated port for receiving RTCM1019 messages
 
