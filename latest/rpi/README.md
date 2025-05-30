@@ -110,8 +110,11 @@ $ ./ssr2osr_run -d tcp:192.168.0.224:3002 -e tcp:192.168.0.224:3005 -o tcp:local
 
 
 ## 4️⃣ Release Log
+- 2025-05-30 :
+  * add the message type 1004 for GPS RTK observation 
+
 - 2025-05-07 :
-		* add command-line options for setting the NTRIP caster's IP, port, username, and password 
+  * add command-line options for setting the NTRIP caster's IP, port, username, and password 
   
 - 2024-06-17 : 
   * add the dedicated port for receiving RTCM1019 messages
