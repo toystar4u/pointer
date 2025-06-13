@@ -56,6 +56,8 @@ options:
               z    : grid list
     -g  specify the grid list when '-i z' option is used
                e.g) -i z -g "[18,19,23,24]" 
+    -K  specify the message types for RTCM(default: [1004,1005,1075]) 
+               e.g) -K "[1004,1005]" 
     -P  specify the RS Position(default: empty) 
                e.g) -P "[-3027298.428, 4103289.187, 3818547.016]" 
                e.g) -P [] for empty RS pos
@@ -73,7 +75,7 @@ options:
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2025.05.07
+v2025.06.13
 ```
 
 
@@ -110,41 +112,46 @@ $ ./ssr2osr_run -d tcp:192.168.0.224:3002 -e tcp:192.168.0.224:3005 -o tcp:local
 
 
 ## 4️⃣ Release Log
+
+
+- 2025-06-13 :
+		* added an option to specify the RTCM message types to be output
+  
 - 2025-05-30 :
-  * add the message type 1004 for GPS RTK observation 
+  * added the message type 1004 for GPS RTK observation 
 
 - 2025-05-07 :
-  * add command-line options for setting the NTRIP caster's IP, port, username, and password 
+  * added command-line options for setting the NTRIP caster's IP, port, username, and password 
   
 - 2024-06-17 : 
-  * add the dedicated port for receiving RTCM1019 messages
+  * added the dedicated port for receiving RTCM1019 messages
 
 - 2024-06-04 : 
-  * fix bug that the undulation(geoid separation) is not considered in the height in BESTPOS and GPGGA
+  * fixed a bug that the undulation(geoid separation) is not considered in the height in BESTPOS and GPGGA
   * the universal receiver mode is tested on NoVatel 
 
 - 2024-05-23 : 
-  * fix bug: relocate RS position
-  * add an option(`-N`) for disabling the relocation of RS position when too far from the origin RS
-  * ignore the port number restriction for the OSR output port
+  * fixed bug: relocate RS position
+  * added an option(`-N`) for disabling the relocation of RS position when too far from the origin RS
+  * ignored the port number restriction for the OSR output port
 
 
 - 2024-05-17 : 
-  * support NovAtel RTK(PwrPak7) with `-n` option
-  * increase the buffer size of NoVatel Parser
-  * remove duplicated GPS OBS data
+  * supported NovAtel RTK(PwrPak7) with `-n` option
+  * increased the buffer size of NoVatel Parser
+  * removed duplicated GPS OBS data
 
 - 2024-05-14 :
-  * change the default Ublox UART baudrate to 115200
-  * change the default `-T` option to `g`
-  * handle NaN value for TROP interpolation
+  * changed the default Ublox UART baudrate to 115200
+  * changed the default `-T` option to `g`
+  * handled NaN values for TROP interpolation
   
 - 2024-05-13 : 
   * POINT SSR SMT05 changed
-  * add a Timing Reference option(`-T`)
+  * added a Timing Reference option(`-T`)
 
 - v2024-05-03
-  * change the SatPOS/VEL/EL/AZ computation methods for SSR2OSR
-  * save the floating-point GPS epoch for logging OSR data
+  * changed the SatPOS/VEL/EL/AZ computation methods for SSR2OSR
+  * saved the floating-point GPS epoch for logging OSR data
     
 - v2024-04-15
