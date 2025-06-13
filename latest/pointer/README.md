@@ -62,87 +62,87 @@ v2025.03.27
 
 ## Release Log
 - 2025-03-27  :
-    * change default options
+    * changed default options
 
 - 2024-12-05 :
-    * add a command-line option for KGD2002 transformation
-    * add command-line options for setting the NTRIP caster's IP, port, username, and password 
-    * fix the singularity problem when all z values are same in the Interpolator2D
+    * added a command-line option for KGD2002 transformation
+    * added command-line options for setting the NTRIP caster's IP, port, username, and password 
+    * fixed the singularity problem when all z values are same in the Interpolator2D
 
 - 2024-09-30 :
-    * add checkRange() for parsing SSR data
-    * remove assert() in the ZeroDifferencer::selectPivot()
+    * added checkRange() for parsing SSR data
+    * removed assert() in the ZeroDifferencer::selectPivot()
      
 - 2024-09-09 :
-    * add a function that check the validity of keys
-    * add options for the CFG file 
+    * added a function that check the validity of keys
+    * added options for the CFG file 
 
 - 2024-09-03 :
-    * use HDOP/PDOP of the SPP solver for POINT message
-    * fix UTC bug in the NMEA GPGGA/POINT messages
-    * add HDOP/VDOP computation for SPP position form RCV
+    * used HDOP/PDOP of the SPP solver for POINT message
+    * fixed UTC bug in the NMEA GPGGA/POINT messages
+    * added HDOP/VDOP computation for SPP position form RCV
     * default KF mode: MT
-    * apply the last version of Monitor(2024-08-23) -- temporal
+    * applied the last version of Monitor(2024-08-23) -- temporal
 
 - 2024-08-16 :
-    * fix TOW rollover problems: loadnav() and bcvelo()
-    * organize the TTL of ephemeris
+    * fixed TOW rollover problems: loadnav() and bcvelo()
+    * organized the TTL of ephemeris
     * Monitor...
         * when the valid and handover flags of the monitor are true, 
         only accept the result of the PPPRTK solver
         * if age is the max. value and all buffers are cleared, set the age to 1
           
 - 2024-08-09 :     
-    * add Monitor; manual update states of the Solver modules
-	* support TM(Time->Measurement) update mode in KalmanFilter
+    * added Monitor; manual update states of the Solver modules
+	* supported TM(Time->Measurement) update mode in KalmanFilter
 	* default KF mode: TM
 
 - 2024-07-30 :
-    * remove assert() in the Lambda class
-    * fix bugs in the Lambda class  ==> transpose() function
-    * add linear interpolation to reduce the singularity of Bilinear interpolations 
+    * removed assert() in the Lambda class
+    * fixed bugs in the Lambda class  ==> transpose() function
+    * added linear interpolation to reduce the singularity of Bilinear interpolations 
         for 2 grids in GridBasedInterpolator class 
 
 - 2024-07-26 :
-    * add EGM2008-5 model for computing the Geoid Height
-    * write POINT log instead of GPGGA for PPPRTK
+    * added EGM2008-5 model for computing the Geoid Height
+    * written the POINT log instead of GPGGA for PPPRTK
 
 - 2024-07-08 :
-  * add an option that split files every day
-  * reduce the active memory size of gps_data_t and gps_osr_t
-  * fix bug that grid list not applied
-  * use the device or SPP solution instead of corrected SPP for NMEA SPP output 
+  * added an option that split files every day
+  * reduced the active memory size of gps_data_t and gps_osr_t
+  * fixed the bug that grid list not applied
+  * used the device or SPP solution instead of corrected SPP for NMEA SPP output 
 
 - 2024-06-17 :
-  * update PL computation
+  * updated PL computation
   * reset the PPPRTK solver after 10 seconds of inactivity
-  * fix bug that the undulation(geoid separation) is not considered in the height in BESTPOS and GPGGA
-  * remove the port number limitations for MBS SSR
-  * change the default port for MBC SSR to 14007
+  * fixed bug that the undulation(geoid separation) is not considered in the height in BESTPOS and GPGGA
+  * removed the port number limitations for MBS SSR
+  * changed the default port for MBC SSR to 14007
     
 - 2024-05-23 :
-  * fix bugs when the internet is unavailable
+  * fixed bugs when the internet is unavailable
   
 - 2024-05-17 :
-  * increase the buffer size of NoVatel Parser
+  * increased the buffer size of NoVatel Parser
   
 - 2024-05-14 :
-  * change the default Ublox UART baudrate to 115200
-  * handle NaN value for TROP interpolation
+  * changed the default Ublox UART baudrate to 115200
+  * handled NaN values for TROP interpolation
   * reset the PNTSolver when solution is NaN value
     
 - v2024-05-13
   * POINT SSR SMT05 changed
     
 - v2024-05-08
-  * support the output device and log stream
-  * add the output format(NMEA GPGGA/SSRPOS with PL)
+  * supported the output device and log stream
+  * added the output format(NMEA GPGGA/SSRPOS with PL)
     
 - v2024-05-03
-  * support the dynamic positioning
-  * add inital HDOP/VDOP compuation
+  * supported the dynamic positioning
+  * added inital HDOP/VDOP compuation
     
 - v2024-04-15
-  * add command-line option for setting rcv antenna
-  * change the interpolation method based on GRIDs
-  * add an option for fixed RS position
+  * added command-line option for setting rcv antenna
+  * changed the interpolation method based on GRIDs
+  * added an option for fixed RS position
