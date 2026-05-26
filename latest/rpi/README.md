@@ -75,7 +75,7 @@ options:
     -x  enable to log results to TXT files
     -z  enable to log results to MAT files
 
-v2025.06.13
+v2026.03.26
 ```
 
 
@@ -113,6 +113,9 @@ $ ./ssr2osr_run -d tcp:192.168.0.224:3002 -e tcp:192.168.0.224:3005 -o tcp:local
 
 ## 4️⃣ Release Log
 
+
+- 2026-05-26 :
+	* interpolation fixed
 
 - 2025-06-13 :
 		* added an option to specify the RTCM message types to be output
