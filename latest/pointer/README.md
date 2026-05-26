@@ -61,6 +61,10 @@ v2025.03.27
 ```
 
 ## Release Log
+
+- 2026-05-26 :
+	* interpolation fixed
+		
 - 2025-03-27  :
     * changed default options
 
